@@ -26,7 +26,7 @@
         inherit system;
 
 	modules = [
-	  (/etc/nix/configuration.nix)
+	  (./modules/configuration.nix)
 	  ({pkgs, ... }: {
             # Pin system nixpkgs to system-wide flake registry
             nix.registry.nixpkgs.flake = nixpkgs;
